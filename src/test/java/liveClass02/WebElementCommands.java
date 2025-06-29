@@ -23,6 +23,7 @@ public class WebElementCommands {
 
         for(WebElement rb:allRb){
             String option = rb.getAttribute("value");
+            rb.getDomAttribute("value");
             if(option.equals("hybrid")){
                 rb.click();
             }
